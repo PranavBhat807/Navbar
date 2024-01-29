@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  background-color: rgba(48, 48, 65, 0.767);
+}
+.Head_div {
+  background-color: antiquewhite;
+}
+
+.Heading {
+  margin-left: 19px;
+  background-image: linear-gradient(to right, rgb(255, 0, 221), rgb(61, 61, 170));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-size: 32px;
+}
+
+
+#navbar {
+  background-color: #fff;
+  top: 15em;
+  padding: 2px;
+  width: 34px;
+  position: fixed;
+  height: 32vh;
+  border-radius: 26px;
+  overflow: hidden; /* Hide overflow to make it appear as if the navbar is expanding */
+  transition: width 0.5s; /* Add transition for smooth width change */
+}
+
+#navbar:hover {
+  width: 134px; /* Increase width on hover */
+}
+
+#navbar a {
+  display: block;
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#navbar img {
+  transition: margin-left 1s; /* Added transition for smooth sliding effect */
+}
+
+#navbar a:hover img {
+  margin-left: 74%; /* Move the image to the right */
+}
+
+#navbar a span {
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  transition: opacity 1s; /* Added transition for smooth fading effect */
+  opacity: 0; /* Initially, set opacity to 0 */
+}
+
+#navbar a:hover span {
+  opacity: 1; /* Show the text on hover */
+}
+.slider-text{
+  font-weight: bolder;
+}
+
+
+
+
+
